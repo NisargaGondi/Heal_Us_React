@@ -8,7 +8,7 @@ export default function Animation2() {
 
     <h1 class="block-effect" style={{"--td": '1.2s'}}>
   <div class="block-reveal" style={{"--bc": '#4040bf', "--d": '.1s'}}>Welcome to</div>
-  <div class="block-reveal" style={{"--bc": '#bf4060', "--d": '.5s'}}>Heal Us - FUCK U HAAID</div>
+  <div class="block-reveal" style={{"--bc": '#bf4060', "--d": '.5s'}}>Heal Us </div>
 </h1>
 
       

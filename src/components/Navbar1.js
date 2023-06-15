@@ -1,47 +1,57 @@
-import React from 'react'
+import React,{useEffect} from 'react'
+import Me from './Me(6).png'
+import { NavLink } from 'react-router-dom'
+import $ from 'jquery'
 
 export default function Navbar1() {
+
+  useEffect(() => {
+    $(document).ready(function() {
+      $(window).scroll(function() {    
+        var scroll = $(window).scrollTop();
+    
+        if (scroll >=50) {
+          $("#loginHeader").addClass("scrolled");
+        } else {
+          $("#loginheader").removeClass("scrolled");
+        }
+      });
+    });
+  }, []);
   return (
     <>
-    <div>
-
-    <nav className="navbar navbar-expand-lg bg-body-tertiary">
+    <div id="test">
+<header id="loginHeader">
+    <nav className="navbar navbar-expand-lg header">
   <div className="container-fluid">
-    <a className="navbar-brand" href="#">Navbar scroll</a>
+    <NavLink className="navbar-brand" to="/">
+      <hgroup id="sitetitle" className="col-md-12">
+        <h1 style={{fontFamily:'permanent marker,cursive',fontWeight:50, color: 'black',fontSize:25 + 'px',
+         marginTop:-40 + 'px'}} class="text-center">Heal Us
+          <img src={Me} alt="blah" height="75px"/></h1>
+        <h2 style={{fontFamily: 'Merienda, cursive', color:'black', fontSize:10+'px',marginTop:-15 + 'px'}}>It's your battle, but you don't need to fight alone</h2>	
+
+      </hgroup></NavLink>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
     <div className="collapse navbar-collapse" id="navbarScroll">
-      <ul className="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-        <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="#">Home</a>
+      <ul className="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style={{'--bs-scroll-height': 5 + 'px'}}>
+        <li className="nav-item anchors">
+          <NavLink className="fs-1" aria-current="page" to="/" 
+          style={{marginLeft:875+'px'}}>Home</NavLink>
         </li>
-        <li className="nav-item">
-          <a className="nav-link" href="#">Link</a>
+        <li className="nav-item anchors">
+          <NavLink className="fs-1" to="/"
+        >Contact Us</NavLink>
         </li>
-        <li className="nav-item dropdown">
-          <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Link
-          </a>
-          <ul className="dropdown-menu">
-            <li><a className="dropdown-item" href="#">Action</a></li>
-            <li><a className="dropdown-item" href="#">Another action</a></li>
-            <li><hr className="dropdown-divider"/></li>
-            <li><a className="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link disabled">Link</a>
-        </li>
+        
       </ul>
-      <form className="d-flex" role="search">
-        <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button className="btn btn-outline-success" type="submit">Search</button>
-      </form>
     </div>
   </div>
 </nav>
-      
+
+</header>
     </div>
 
     </>

@@ -2,6 +2,7 @@ import React, {useEffect} from 'react'
 import Me from './Me(6).png'
 import './style_header_MP.css'
 import $ from 'jquery';
+import { NavLink } from 'react-router-dom';
 
 
 export default function Navbar() {
@@ -35,14 +36,14 @@ export default function Navbar() {
         </ul>
       </nav>
       <hgroup id="sitetitle" className="col-md-12">
-        <h1 style={{fontFamily:'permanent marker,cursive',fontWeight:50, color: 'black',fontSize:100 + 'px',
+        <NavLink className="nav-link"to="/"><h1 style={{fontFamily:'permanent marker,cursive',fontWeight:50, color: 'black',fontSize:100 + 'px',
          marginTop:30 + 'px'}} class="text-center">Heal Us
-          <img src={Me} alt="blah" height="150px"/></h1>
+          <img src={Me} alt="blah" height="150px"/></h1></NavLink>
         <h2 style={{fontFamily: 'Merienda, cursive', color:'black'}}>It's your battle, but you don't need to fight alone</h2>	
 
       </hgroup>
       <span className='log'>
-      <a  href="/"><button style={{marginTop:20+'px', color:'black'}} class="button4 btn btn-outline-light fs-3">LOG IN</button></a>
+      <NavLink className="nav-link" to="/Login"><button style={{marginTop:20+'px', color:'black'}} class="button4 btn btn-outline-light fs-3">LOG IN</button></NavLink>
       </span>
     </div>
   </header>

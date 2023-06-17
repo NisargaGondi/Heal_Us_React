@@ -80,6 +80,27 @@ hgroup h2 {
   /* For reviews*/
 }
 
+
+#loginHeader {
+	z-index: 1;
+	width: 100%;
+	background:#a178ac;
+	background-position: top;
+	transition: 0.5s ease all;
+	
+  }
+
+  #loginHeader.scrolled {
+	height:50px;
+	border-bottom-left-radius: 25%;
+	border-bottom-right-radius: 25%;
+  }
+  #loginHeader.scrolled hgroup {
+	opacity: 100%;
+	transform: translateY(-25px);
+	/* For reviews*/
+  }
+
 /*circle animation*/
 
 .circle{

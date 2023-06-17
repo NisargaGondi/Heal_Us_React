@@ -77,6 +77,17 @@ background-color:lightgreen;
           z-index:1;
         }
 
+        .header_login{
+          padding: 10px 10px;
+          background: #a178ac;
+          color: #f1f1f1;
+          top:0px;
+          width: 100%;
+          height:100px;
+          z-index:1;
+        }
+
+
         .header1{
           padding: 10px 16px;
           background: #c0b3f4;

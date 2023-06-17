@@ -10,7 +10,7 @@ export default function Navbar1() {
       $(window).scroll(function() {    
         var scroll = $(window).scrollTop();
     
-        if (scroll >=50) {
+        if (scroll >=100) {
           $("#loginHeader").addClass("scrolled");
         } else {
           $("#loginheader").removeClass("scrolled");
@@ -22,7 +22,7 @@ export default function Navbar1() {
     <>
     <div id="test">
 <header id="loginHeader">
-    <nav className="navbar navbar-expand-lg header">
+    <nav className="navbar navbar-expand-lg header_login">
   <div className="container-fluid">
     <NavLink className="navbar-brand" to="/">
       <hgroup id="sitetitle" className="col-md-12">
@@ -32,11 +32,9 @@ export default function Navbar1() {
         <h2 style={{fontFamily: 'Merienda, cursive', color:'black', fontSize:10+'px',marginTop:-15 + 'px'}}>It's your battle, but you don't need to fight alone</h2>	
 
       </hgroup></NavLink>
-    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-      <span className="navbar-toggler-icon"></span>
-    </button>
-    <div className="collapse navbar-collapse" id="navbarScroll">
-      <ul className="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style={{'--bs-scroll-height': 5 + 'px'}}>
+
+    <div>
+      <ul>
         <li className="nav-item anchors">
           <NavLink className="fs-1" aria-current="page" to="/" 
           style={{marginLeft:875+'px'}}>Home</NavLink>

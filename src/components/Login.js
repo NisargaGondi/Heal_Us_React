@@ -2,6 +2,7 @@ import React,{useEffect} from 'react'
 import Navbar1 from './Navbar1'
 import './style_login.css'
 import './sign_in.css'
+import { NavLink } from 'react-router-dom'
 
 export default function Login() {
 
@@ -22,11 +23,12 @@ export default function Login() {
 
   return (
     <>
-    <div>
-      
+<div>     
 <Navbar1/>
-
-<div className="login-wrapper justify-content-center d-flex align-content-between">
+<div className='justify-content-xl-center'>
+<br/><br/><br/><br/>
+</div>
+<div className="login-wrapper d-flex justify-content-center">
     <form action="" className="form" >
     <h2>Login</h2>
     <br/><br/>
@@ -62,6 +64,13 @@ export default function Login() {
 
 
 
+
+    </form>
+  <br/><br/><br/><br/><br/><br/>
+  <div className="login-wrapper justify-content-center d-flex justify-content-xl-center"  >
+  <span className="form_reg" style={{marginTop:680+'px', marginLeft:-500+'px'}}>  
+
+  
   <svg className="svg--source" aria-hidden="true">
 
   
@@ -91,7 +100,7 @@ export default function Login() {
   
   </svg>
   
-  <div className="wrapper" style={{marginLeft:40+'px',marginTop:10+'px'}}>
+  <div className="wrapper " style={{marginLeft:90+'px',marginTop:-20+'px'}}>
   <div className="connect">
   
   
@@ -115,33 +124,15 @@ export default function Login() {
         <span className="clip">GITHUB</span>
       </svg>
     </a>
-  
-   
-  
-  
-  
   </div>
   </div>
-
-
-
-  
-
-
-
-
-
-
-    </form>
-  <br/><br/><br/><br/><br/><br/>
-  <span className="form_reg" style={{marginTop:680+'px', marginLeft:-500+'px'}}>  
     
-  <a href="C:\Users\Nisarga Gondi\OneDrive\Desktop\Web Dev\Register\Register.html" style={{color:'white'}}> 
-     <button type="submit" value="Register" className="reg-btn" style={{marginLeft:195+'px'}}>Register</button></a>
+  <NavLink to="/Register" style={{color:'white'}}> 
+     <button type="submit" value="Register" className="reg-btn" style={{marginLeft:165+'px'}}>Register</button></NavLink>
 
   </span>
 </div>
-
+</div>
 
     </div>
     </>

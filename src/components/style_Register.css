@@ -7,7 +7,8 @@
     background-size: cover;
     font-family: sans-serif;
     }
-    .login-wrapper {
+    .register-wrapper {
+    margin-top: 200px;
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -15,24 +16,24 @@
     align-items: center;
     }
     .form {
-    position: relative;
+    position:absolute;
     width: 100%;
-    max-width: 500px;
+    max-width: 750px;
     padding: 80px 40px 40px;
     background:white;
     border-radius: 10px;
     color: black;
-    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.94);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.9);
     }
 
     .form_reg {
         position: relative;
         width: 100%;
-        max-width: 500px;
+        max-width: 380px;
         padding: 80px 40px 40px;
         background:white;
         border-radius: 10px;
-        color: black;
+        color:black;
         box-shadow: 0 15px 25px rgba(0, 0, 0, 0.94);
         }
     
@@ -75,7 +76,7 @@
         padding: 10px 0;
         font-size: 1.5 rem;
         letter-spacing: 1px;
-        margin-bottom: 30px;
+        margin-bottom: 50px;
         border: none;
         border-bottom: 1px solid rgb(0, 0, 0);
         outline: none;
@@ -93,7 +94,36 @@
             pointer-events: none;
             transition: 0.3s ease-out;
             }
+
+            .form .input-group-checkbox {
+              position: relative;
+              }
         
+            .form .input-group-checkbox input {
+        
+              width: 100%;
+              padding: 10px 0;
+              font-size: 1.2 rem;
+              letter-spacing: 1px;
+              margin-bottom: 50px;
+              border: none;
+              border-bottom: 1px solid rgb(0, 0, 0);
+              outline: none;
+              background-color: transparent;
+              color: black;
+              }
+          
+              .form .input-group-checkbox label {
+              
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  padding: 10px 0;
+                  font-size: 1.2rem;
+                  pointer-events: none;
+                  transition: 0.3s ease-out;
+                  }
+              
     
         .form .input-group input:focus + label,
         .form .input-group input:valid + label {
@@ -101,9 +131,51 @@
         color: black;
         font-size: 2rem;
         }
+
+        .form .input-group-checkbox input:focus + label,
+        .form .input-group-checkbox input:valid + label {
+        transform: translateY(-9px);
+        color: black;
+        font-size: 1.4rem;
+        }
+
+        .form .input-group-gender {
+            position: relative;
+            }
+            .form .input-group-gender input {
+        
+                width: 100%;
+                padding: 10px 0;
+                font-size: 1.5rem;
+                letter-spacing: 1px;
+                margin-bottom: 50px;
+                border: none;
+                border-bottom: 1px solid rgb(0, 0, 0);
+                outline: none;
+                background-color: transparent;
+                color: inherit;
+                }
+            
+                .form .input-group-gender label {
+                
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    padding: 10px 0;
+                    font-size: 2rem;
+                    pointer-events: none;
+                    transition: 0.3s ease-out;
+                    }
+                
+            
+                .form .input-group-gender input:focus + label,
+                .form .input-group-gender input:valid + label {
+                color: black;
+                font-size: 1rem;
+                }
         .submit-btn {
             display: block;
-            margin-left:110px;
+            margin-left:250px;
             border: none;
             outline: none;
             background: green;
@@ -161,6 +233,5 @@
             font-size: 2rem;
             font-weight: 900;
             text-decoration: none;
-            color: inherit;
+            color: black;
             }
-

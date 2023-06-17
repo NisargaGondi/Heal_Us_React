@@ -18,7 +18,10 @@ function App() {
           <Routes>
             <Route path="/Login" element={<Login></Login>}></Route>
             <Route path="/" element={<HealHome/>}></Route>
-            <p1>hi</p1>
+            
+          </Routes>
+          <Routes>
+            <Route path="/Register" element={<Register></Register>}></Route>
           </Routes>
       </BrowserRouter>
 

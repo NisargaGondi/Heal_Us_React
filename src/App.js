@@ -25,6 +25,7 @@ function App() {
             <Route path="/Register" element={<Register></Register>}></Route>
           </Routes>
       </BrowserRouter>
+      fu haaid
 
     </>
   );

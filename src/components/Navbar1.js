@@ -1,27 +1,14 @@
-import React,{useEffect} from 'react'
+import React from 'react'
 import Me from './Me(6).png'
 import { NavLink } from 'react-router-dom'
-import $ from 'jquery'
 
 export default function Navbar1() {
 
-  useEffect(() => {
-    $(document).ready(function() {
-      $(window).scroll(function() {    
-        var scroll = $(window).scrollTop();
-    
-        if (scroll >=100) {
-          $("#loginHeader").addClass("scrolled");
-        } else {
-          $("#loginheader").removeClass("scrolled");
-        }
-      });
-    });
-  }, []);
+
   return (
     <>
     <div id="test">
-<header id="loginHeader">
+<header>
     <nav className="navbar navbar-expand-lg header_login">
   <div className="container-fluid">
     <NavLink className="navbar-brand" to="/">

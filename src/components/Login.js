@@ -1,26 +1,10 @@
-import React,{useEffect} from 'react'
+import React from 'react'
 import Navbar1 from './Navbar1'
 import './style_login.css'
 import './sign_in.css'
 import { NavLink } from 'react-router-dom'
 
 export default function Login() {
-
-  useEffect(() => {
-    function showPlaceholder() {
-      var input = document.getElementById("input-text");
-      input.placeholder = input.getAttribute("data-placeholder");
-    }
-    
-    function hidePlaceholder() {
-      var input = document.getElementById("input-text");
-      input.placeholder = "";
-    }
-
-   
-  }, []);
-
-
   return (
     <>
 <div>     

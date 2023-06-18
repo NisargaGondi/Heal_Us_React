@@ -4,35 +4,29 @@ import './style_header_MP.css'
 import $ from 'jquery';
 import { NavLink } from 'react-router-dom';
 
-
-export default function Navbar(props) {
-
-  useEffect(() => {
-    $(document).ready(function() {
-      $(window).scroll(function() {    
-        var scroll = $(window).scrollTop();
-    
-        if (scroll >= 10) {
-          $("#masthead").addClass("scrolled");
-        } else {
-          $("#masthead").removeClass("scrolled");
-        }
-      });
-    });
-  }, []);
-
+export default function NavbarMain() {
+    useEffect(() => {
+        $(document).ready(function() {
+          $(window).scroll(function() {    
+            var scroll = $(window).scrollTop();
+        
+            if (scroll >= 10) {
+              $("#masthead").addClass("scrolled");
+            } else {
+              $("#masthead").removeClass("scrolled");
+            }
+          });
+        });
+      }, []);
   return (
     <>
-    <div>
- 
- 
-  <header id="masthead">
+    <header id="masthead">
     <div className="container">
       <nav role='navigation' className="col-md-12 text-right">
         <ul className="anchors">
-          <li><a id="a" href="/">{props.Home}</a></li>
-          <li><a id="a" href="/">{props.ContactUs}</a></li>
-          <li><a id="a" href="/">{props.Features}</a></li>
+          <li><a id="a" href="/">Home</a></li>
+          <li><a id="a" href="/">ContactUs</a></li>
+          <li><a id="a" href="/">Features</a></li>
         </ul>
       </nav>
       <hgroup id="sitetitle" className="col-md-12">
@@ -40,16 +34,9 @@ export default function Navbar(props) {
          marginTop:30 + 'px'}} class="text-center">Heal Us
           <img src={Me} alt="blah" height="150px"/></h1></NavLink>
         <h2 style={{fontFamily: 'Merienda, cursive', color:'black'}}>It's your battle, but you don't need to fight alone</h2>	
-
       </hgroup>
-      <span className='log'>
-      <NavLink className="nav-link" to="/Login"><button style={{marginTop:20+'px', color:'black'}} class="button4 btn btn-outline-light fs-3">{props.LOGIN}</button></NavLink>
-      </span>
     </div>
   </header>
-  
-    </div>
-
     </>
   )
 }

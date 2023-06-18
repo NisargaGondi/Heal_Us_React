@@ -38,7 +38,7 @@ export default function Login() {
     <table>
       <tr><td><a href="C:\Users\Nisarga Gondi\OneDrive\Desktop\Web Dev\Forgot password\ForgotPassword.html"><h5>Forgot password?</h5></a></td>
     <td><NavLink to="/Main">
-      <input type="submit" value="Login" style={{marginLeft:115+'px', color:'white'}} className="submit-btn text-center" /></NavLink></td>
+     hi <input type="submit" value="Login" style={{marginLeft:115+'px', color:'white'}} className="submit-btn text-center" /></NavLink></td>
   </tr>
   <tr>
    

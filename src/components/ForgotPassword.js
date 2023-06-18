@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import './style_forgotpassword.css'
 import $ from 'jquery'
+import { NavLink } from 'react-router-dom';
 
 export default function ForgotPassword() {
     useEffect(() => {
@@ -64,8 +65,8 @@ export default function ForgotPassword() {
         </div>
         <br/><br/>
 
-        <a href="C:\Users\Nisarga Gondi\OneDrive\Desktop\Web Dev\Change Password\ChangePassword.html">
-          <input type="submit" value="Change Password" className="submit-btn text-center" style={{marginLeft:125+'px', color: 'black'}}/></a>
+        <NavLink to="/ChangePassword">
+          <input type="submit" value="Change Password" className="submit-btn text-center" style={{marginLeft:125+'px', color: 'black'}}/></NavLink>
     </form>
 </div>
 

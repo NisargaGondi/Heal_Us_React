@@ -10,7 +10,6 @@ export default function Main() {
   return (
 <>
 <NavbarMain/>
-hi
 <div >
 <div style={{marginBottom: 100+'px'}} className="container-xxl mb-5 pb-5">
   <div className="row">
@@ -103,7 +102,7 @@ hi
       <img src={img8} alt="blah" style={{width:"100%"}}/>
     </div>
   <div className="col-sm-5 header_dailytasks but_hover5" style={{marginBottom:100+'px', marginLeft: 150+'px'}}>
-        <a href="C:\Users\Nisarga Gondi\OneDrive\Desktop\Web Dev\Daily Tasks\dailyTasks.html">
+       
     <div className="words word1 daily header_daily">&nbsp
     <span className="daily_h1" style={{fontSize:60+'px'}}><b>D</b></span>
     <span className="daily_h1" style={{fontSize:60+'px'}}><b> </b></span>
@@ -126,7 +125,7 @@ hi
     <span className="daily_h1" style={{fontSize:60+'px'}}><b>k</b></span>
     <span className="daily_h1" style={{fontSize:60+'px'}}><b> </b></span>
     <span className="daily_h1" style={{fontSize:60+'px'}}><b>s</b></span>
-  </div></a>
+  </div>
    <i style={{fontSize:20+'px'}}>"Engaging in daily tasks and routines can be beneficial for maintaining good mental health. It provides a sense of structure, purpose, and accomplishment that can boost self-esteem and reduce stress. These tasks can be simple activities such as making the bed, doing laundry, or cooking a meal. By completing these tasks regularly, individuals can feel a sense of control over their environment and daily life, which can lead to a more positive outlook. Additionally, completing tasks can release endorphins, the body's natural mood-boosters, which can promote a sense of well-being. Overall, daily tasks and routines can be an effective way to improve mental health and promote overall well-being."</i>
     </div>
   </div>

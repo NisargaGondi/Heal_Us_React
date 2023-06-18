@@ -52,7 +52,7 @@ export default function Login() {
     </div>
     <br/><br/>
     <table>
-      <tr><td><a href="C:\Users\Nisarga Gondi\OneDrive\Desktop\Web Dev\Forgot password\ForgotPassword.html"><h5>Forgot password?</h5></a></td>
+      <tr><td><NavLink to="/ForgotPassword" ><h5>Forgot password?</h5></NavLink></td>
     <td><a href="C:\Users\Nisarga Gondi\OneDrive\Desktop\Web Dev\Main Page\MainPage.html">
       <input type="submit" value="Login" style={{marginLeft:115+'px', color:'white'}} className="submit-btn text-center" /></a></td>
   </tr>
@@ -104,21 +104,21 @@ export default function Login() {
   <div className="connect">
   
   
-    <a href="" rel="author" className="share google">
+    <a href="/" rel="author" className="share google">
       <svg role="presentation" className="svg--icon">
         <use href="#svg--google" />
         <span className="clip"> GOOGLE + </span>
       </svg>
     </a>
   
-    <a href="" rel="author" className="share facebook">
+    <a href="/" rel="author" className="share facebook">
       <svg role="presentation" className="svg--icon">
         <use href="#svg--facebook" />
         <span className="clip"> FACEBOOK </span>
       </svg>
     </a>
   hi
-    <a href="" className="share github">
+    <a href="/" className="share github">
       <svg role="presentation" className="svg--icon">
         <use href="#svg--github" />
         <span className="clip">GITHUB</span>

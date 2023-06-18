@@ -19,7 +19,7 @@ function HealHome() {
       
         <div className="App">
 
-          <Navbar />
+          <Navbar Home="HOME" ContactUs="CONTACT US" Features="FEATURES" LOGIN="LOG IN" />
 
 
         </div>

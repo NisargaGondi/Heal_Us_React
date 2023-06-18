@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import './style_ChangePassword.css';
+import { NavLink } from 'react-router-dom';
 
 export default function ChangePassword() {
   useEffect(() => {
@@ -46,14 +47,14 @@ export default function ChangePassword() {
           <br />
           <br />
 
-          <a href="C:\Users\Nisarga Gondi\OneDrive\Desktop\Web Dev\Login\login.html">
+          <NavLink to="/Login">
             <input
               type="submit"
               value="Change Password"
               className="submit-btn text-center"
               style={{ marginLeft: 125 + 'px', color: 'black' }}
             />
-          </a>
+          </NavLink>
         </form>
       </div>
     </>

@@ -36,9 +36,9 @@ export default function Login() {
     </div>
     <br/><br/>
     <table>
-      <tr><td><NavLink to="/ForgotPassword" ><h5>Forgot password?</h5></NavLink></td>
-    <td><a href="C:\Users\Nisarga Gondi\OneDrive\Desktop\Web Dev\Main Page\MainPage.html">
-      <input type="submit" value="Login" style={{marginLeft:115+'px', color:'white'}} className="submit-btn text-center" /></a></td>
+      <tr><td><NavLink to="/ForgotPassword"><h5>Forgot password?</h5></NavLink></td>
+    <td><NavLink to="/Main">
+      <input type="submit" value="Login" style={{marginLeft:115+'px', color:'white'}} className="submit-btn text-center" /></NavLink></td>
   </tr>
   <tr>
    

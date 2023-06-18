@@ -10,6 +10,7 @@ export default function Main() {
   return (
 <>
 <NavbarMain/>
+hi
 <div >
 <div style={{marginBottom: 100+'px'}} className="container-xxl mb-5 pb-5">
   <div className="row">

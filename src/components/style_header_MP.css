@@ -18,7 +18,7 @@ a {
   position: fixed;
   width: 100%;
   height: 1000px;
-  background: url("C:\Users\Haaid\OneDrive\Desktop\HealUS React\Heal_Us_React\src\ales-krivec-x4Jc4HKEHKg-unsplash.jpg");
+  background: url('../ales-krivec-x4Jc4HKEHKg-unsplash.jpg');
   background-size:cover;
   background-position: top;
   transition: 0.5s ease all;

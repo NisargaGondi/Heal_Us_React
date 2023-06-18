@@ -1,12 +1,12 @@
 import './App.css';
 import './stylesheet_for_MainPage.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Login from './components/Login';
-import HealHome from './components/heal_home';
-import Register from './components/Register';
-import ForgotPassword from './components/ForgotPassword';
-import Main from './components/Main';
-import ChangePassword from './components/ChangePassword';
+import Login from './components/js/Login';
+import HealHome from './components/js/heal_home';
+import Register from './components/js/Register';
+import ForgotPassword from './components/js/ForgotPassword';
+import Main from './components/js/Main';
+import ChangePassword from './components/js/ChangePassword';
 
 
 function App() {

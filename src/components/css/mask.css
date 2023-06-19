@@ -1,0 +1,38 @@
+.body_mask {
+  height: 100vh;
+  margin: 0;
+}
+
+.svg {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 12.4em;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: 1s font-size;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.text_mask{
+  word-wrap: break-word;
+}
+video {
+  height: 95%;
+  width: 100%;
+}
+
+.svg rect {
+  fill: white;
+  -webkit-mask: url(#mask);
+          mask: url(#mask);
+}
+.svg > rect{
+  fill:#d5ccf8;
+}
+@media screen and (max-width: 1200px) {
+  .svg {
+    font-size: 2em;
+  }
+}

@@ -2,11 +2,12 @@ require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
-
+const path = require('path');
 const app = express();
 
 app.use(express.json());
 app.use(cors());
+app.use(express.static(path.join(__dirname, '..', 'src')));
 
 const database = async () => {
     const connectionParams = {
@@ -29,41 +30,32 @@ database();
 
 const User = require("./models/User.js");
 
-app.get('/user', async (req, res) => {
-    const user = await User.find();
-    res.json(user);
-});
+app.post('/loggedin', async (req, res) => {
 
-app.post('/user/new', async (req, res) => {
-
-    const user = new User({
-        firstName: req.body.firstName,
-        lastName: req.body.lastName,
-        email: req.body.email,
-        usn: req.body.usn,
-        gender: req.body.gender,
-        age: req.body.age,
-        mobileNo: req.body.mobileNo,
-        password: req.body.password,        
-    });
-
-    await user.save();
-
-    res.json(user);
-});
-
-app.delete('/user/delete/:id', async (req, res) => {
-
-    const userdel = await User.findByIdAndDelete(req.params.id);
-
-    res.json(userdel);
-});
+    console.log(req.body);
+    const { usn, password } = req.body;
+  
+    try {
+      const user = await User.findOne({ usn: usn });
+      if (!user) {
+        // User with the provided USN not found   
+        return res.status(404).json({ message: 'User not found' });
+      }
+  
+      if (user.password !== password) {
+        // Incorrect password
+        return res.status(401).json({ message: 'Incorrect password' });
+      }
+      // User found and password matched
+      return res.status(200).json({ message: 'Login successful' });
+    } catch (error) {
+      console.log('Error:', error);
+      return res.status(500).json({ message: 'Server error' });
+    }
+  });
 
 
-app.listen(3001, () =>  {
+
+app.listen(3002, () =>  {
     console.log("server is listening")
 });
-
-// mongoose.connect("mongodb+srv://gauriramabhadran:Divya@20031234@cluster0.bv50ulh.mongodb.net/", { useNewUrlParser: true }, () =>
-//   console.log("Connected to mongodb")
-// );
